@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff9db;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.questions {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.title {
+  font-family: "Grey Qo", cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: goldenrod;
+  letter-spacing: 1.2px;
+}
+
+.section-center {
+  max-width: 700px;
+
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 600px;
+  margin-bottom: 1rem;
+}
+.question-title {
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question-title p {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+.question-text {
+  padding: 0.5rem 0;
+  border-top: 0.5px solid goldenrod;
+}
+.question-text p {
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.question-btn {
+  cursor: pointer;
+  border-color: transparent;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  color: goldenrod;
+  display: inline-block;
+  padding: 0 0.2rem;
+  padding: 0.375rem 0.75rem;
+  transition: 0.4s;
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+/* hide text */
+.question-text {
+  display: none;
+}
+
+.showText .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.showText .minus-icon {
+  display: inline;
+}
+
+.showText .plus-icon {
+  display: none;
+}

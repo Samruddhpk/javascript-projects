@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#value {
+  font-size: 5rem;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #222;
+  background-color: transparent;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-family: inherit;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
