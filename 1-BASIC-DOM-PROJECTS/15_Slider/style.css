@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.slider-container {
+  width: 80vw;
+  margin: 0 auto;
+  height: 60vh;
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 4rem;
+  box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.5);
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.slide h1 {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+/* .slide:nth-child(1) {
+  left: 0%;
+}
+.slide:nth-child(2) {
+  left: 100%;
+}
+.slide:nth-child(3) {
+  left: 200%;
+}
+.slide:nth-child(4) {
+  left: 300%;
+}
+.slide:nth-child(5) {
+  left: 400%;
+}
+.slide:nth-child(6) {
+  left: 500%;
+} */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 2rem;
+  border: transparent;
+  background-color: transparent;
+  color: rgba(211, 211, 211, 0.726);
+  transition: all 0.4s ease-in-out;
+  font-family: inherit;
+  letter-spacing: 1.5px;
+}
+.btn:hover {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
