@@ -25,7 +25,7 @@ img {
   height: 60vh;
   position: relative;
   border-radius: 0.5rem;
-  overflow: hidden;
+  overflow: hidden; /* let overflow to make modern sliders or carousals - don't hide it */
   margin-top: 4rem;
   box-shadow: 0 0 15px 4px rgba(255, 255, 255, 0.5);
 }
