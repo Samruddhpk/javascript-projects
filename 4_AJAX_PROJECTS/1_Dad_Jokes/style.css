@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./laugh.jpg");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 70vw;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.jokeBtn {
+  cursor: pointer;
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: transparent;
+  background-color: orangered;
+  color: white;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.jokeBtn:hover {
+  background-color: red;
+}
+.result {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  padding: 2rem;
+  height: 200px;
+  max-height: auto;
+  border-radius: 10px;
+}
+
+.result p {
+  line-height: 1.5;
+  font-size: 2rem;
+  color: #333;
+}
