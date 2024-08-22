@@ -5,6 +5,7 @@
     - create nav => nav links
     - hero
     - sidebar
+    - cart sidebar
 
 ### Setup sidebar toggling functionality
 
@@ -16,3 +17,5 @@
 
 - src/toggleCart.js
   - same as sidebar => show/hide class "show"
+
+### About Page
