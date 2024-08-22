@@ -18,4 +18,6 @@
 - src/toggleCart.js
   - same as sidebar => show/hide class "show"
 
-### About Page
+### About Page & Featured Section
+
+### Fetch products
