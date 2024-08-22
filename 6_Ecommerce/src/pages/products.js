@@ -12,3 +12,14 @@ import setupPrice from '../filters/price.js';
 import { store } from '../store.js';
 import display from '../displayProducts.js';
 import { getElement } from '../utils.js';
+
+
+const loading = getElement(".page-loading");
+
+// See, this is the beauty of re-usable code.
+display(store, getElement(".products-container"));
+
+// search filter
+setupSearch(store);
+
+loading.style.display = "none";

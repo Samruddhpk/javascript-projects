@@ -30,3 +30,7 @@
 - so will setup a store & will just store those products array(store) in localStorage & get them from there.(in products page,cart,home page etc.)
 
 ### Format Price
+
+### Add to cart
+
+### Display Products in products page
