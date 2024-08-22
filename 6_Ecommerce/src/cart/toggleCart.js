@@ -17,4 +17,6 @@ closeCartBtn.addEventListener("click", () => {
 
 // this function works when clicked on any product with cart-icon clicked
 // directly added that product to cart and opens the cart sidebar
-export const openCart = () => { };
+export const openCart = () => {
+    cartOverlay.classList.add('show');
+};
