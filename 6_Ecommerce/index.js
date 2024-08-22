@@ -11,7 +11,11 @@ import { getElement } from './src/utils.js';
 
 const init = async () => {
     const products = await fetchProducts();
-    console.log(products);
+    if (products) {
+        // add products to store
+        setupStore(products);
+        console.log(store);
+    }
 };
 
 
