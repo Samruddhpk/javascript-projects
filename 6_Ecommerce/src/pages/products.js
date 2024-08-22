@@ -22,4 +22,7 @@ display(store, getElement(".products-container"));
 // search filter
 setupSearch(store);
 
+// company buttons filter
+setupCompanies(store);
+
 loading.style.display = "none";
