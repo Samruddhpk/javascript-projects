@@ -21,3 +21,12 @@
 ### About Page & Featured Section
 
 ### Fetch products
+
+### Setup Store
+
+- store.js
+- already fetched products
+- no need to fetch again and again in every pages(ajax request makes performance slow is used again & again)
+- so will setup a store & will just store those products array(store) in localStorage & get them from there.(in products page,cart,home page etc.)
+
+### Format Price

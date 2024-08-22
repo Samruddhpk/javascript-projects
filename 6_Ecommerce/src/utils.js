@@ -20,10 +20,25 @@ const getElement = (selection) => {
   );
 };
 
-const formatPrice = () => { };
+// price needs to be formatted in such way
+// api has price in whole value in cents(US currency) => 999 (not 999 dollars) => should be 9.99(9 dollars 99 cents)
+const formatPrice = (price) => {
+  let formattedPrice = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD"
+  }).format((price / 100).toFixed(2));
+  return formattedPrice;
+};
 
-const getStorageItem = () => { };
-const setStorageItem = () => { };
+// local storage 
+const getStorageItem = () => {
+  let storageItem = localStorage.getItem("store") ? JSON.parse(localStorage.getItem("store")) : [];
+  return storageItem;
+};
+
+const setStorageItem = (name, item) => {
+  localStorage.setItem(name, JSON.stringify(item));
+};
 
 export {
   allProductsUrl,
