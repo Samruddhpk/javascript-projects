@@ -25,4 +25,10 @@ setupSearch(store);
 // company buttons filter
 setupCompanies(store);
 
+
+// price filter
+setupPrice(store);
+
+
+
 loading.style.display = "none";
